@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/aaa0c9988b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/style.css">
+<!--link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">-->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+<title>Document</title>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" id ="navbar">
+        <a class="navbar-brand" href="#"><img src="images/logo4.png" widt="60px" height ="60px"alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" id="white" href="#about">About </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="white" href="#projects">Projects</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" id="white" target="_blank" href="resume.pdf">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="white" href="#contact">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+      
+
+      <div id="about" class="container-fluid d-flex flex-column justify-content-center align-items-center text-light text-center">
+        
+           <h1 id="desc-intro"></h1>
+           <p id="desc"></p>
+         
+         
+        
+        </div>
+        <div id="projects" class="p-3">
+            <h1 class="text-center text-light projects-heading">Projects</h1>
+            <div class="container">  
+                <div class="d-flex flex-wrap justify-content-around">
+                <div class="card" >
+                  <img class="card-img-top" src="images/Auto-resume-generator.jpg" alt="Card image cap" width="250px" height="250px">
+                  <hr>
+                  <div class="card-body">
+                    <h5 class="card-title">Auto resume generator</h5>
+                    <p class="card-text">A user friendly tool to auto generate resume from given template.</p>
+                </div>
+                    <div class="card-footer">
+                        <button onclick="call()" class="btn btn-secondary site">Site</button>
+                        <a href="#"><i class="fab fa-github"></i>Github</a>
+                      
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="images/BinaryCalculator.jpg" width="250px" height="250px" alt="Card image cap">
+                  <hr>
+                  <div class="card-body">
+                    <h5 class="card-title">Binary Calculator</h5>
+                    <p class="card-text">This Calculator performs different operations like &(AND) , ^(XOR) etc. on Binary Numbers . -</p>
+                </div>
+                    <div class="card-footer">
+                        <button onclick="window.location.href='#'" class="btn btn-secondary site">Site</button>
+                        <a href="#"><i class="fab fa-github"></i>Github</a>
+                     
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="images/college-portal.jpeg" width="250px" height="250px" alt="Card image cap">
+                  <hr>
+                  <div class="card-body">
+                    <h5 class="card-title">College-portal</h5>
+                    <p class="card-text">College Student's Portal is an online portal for college students having record of their previous and current semester, syllabus etc. Google charts were used to graphically represent past analysis of students.</p>
+                    
+                  </div>
+                  <div class="card-footer">
+                    
+                    <a href="#"><i class="fab fa-github"></i>Github</a>
+                 
+              </div>
+                </div>
+                
+                
+              
+                
+    
+               
+                </div>
+                </div>
+    
+                </div>
+        
+
+        
+        <div id="contact" class="d-flex flex-column justify-content-center align-items-center text-center">
+            <h1 class="mt-5">Let's Work together</h1>
+            
+            <div class="social-media">
+               <a href="https://www.facebook.com/nayan.singhai.3" target="_blank" class="social"><i class="fab fa-facebook-square"></i>Facebook</a>
+                <a href="https://github.com/nayan98" target="_blank" class="social"><i class="fab fa-github"></i>Github</a>
+                <a href="https://www.linkedin.com/in/nayan-singhai-04677913b/" target="_blank" class="social"><i class="fab fa-linkedin"></i>Linkedin</a>
+                <a href="https://www.instagram.com/nayan_singhai_2527/" target="_blank" class="social"><i class="fab fa-instagram-square"></i>Instagram</a>
+            </div>
+            
+            
+        </div>
+        <script src="js/app.js"></script>
+        
+        
+        
+    
+
+</body>
+</html>
