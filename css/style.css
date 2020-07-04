@@ -127,3 +127,14 @@ div.card:hover{
     transform: translateY(20px);
 }
 
+@media only screen and (max-width: 600px) {
+    #about{
+    height: 100vh;
+    background-image: url("../images/nayan5small.jpg");
+    
+  background-size: cover;
+    background-repeat: no-repeat;
+    
+    }
+    
+  }
