@@ -42,7 +42,7 @@ a:hover{
 height: 100vh;
 background-image: url("../images/nayan5.jpg");
 
-background-size: cover;
+background-size: 100%;
 background-repeat: no-repeat;
 
 }
