@@ -42,6 +42,6 @@ function typeWriter1() {
 
 
 });
-function call(){
-window.open("https://nayan98.github.io/Auto-resume-generator/index.html","_blank");
+function call(url){
+window.open(url,"_blank");
 }
