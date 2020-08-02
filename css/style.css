@@ -49,12 +49,12 @@ a.white:hover{
 
 #about{
 height: 100vh;
-background-image: url("../images/nayan1compressed.jpg");
+background-image: url("../images/nayan1compressed1.jpg");
 
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-opacity:0.8;
+opacity:1;
 
 
 
