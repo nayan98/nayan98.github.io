@@ -2,10 +2,6 @@ html,body {
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;    
 }
-#hi {
-    word-wrap: break-word;
-    background-color: pink;
-}
 #desc-intro {
     color:white;
     font-weight: bold;
@@ -36,7 +32,7 @@ a.white:hover {
     color:wheat;
 }
 
-#about {
+/* #about {
     height: 100vh;
     background-image: url("../images/nayan1compressed1.jpg");
 
@@ -44,50 +40,30 @@ a.white:hover {
     background-position: center;
     background-repeat: no-repeat;
     opacity:1;
+} */
+
+/*paralax*/
+
+.parallax1 {
+    /* The image used */
+    background-image: url("../images/nayan-paralax1.jpg");
+
+    /* Set a specific height */
+    min-height: 100vh; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-h2 {
-    font-size:2vw;
-    font-weight: bold;
-    
-}
-p { 
-    font-size:1vw;
-}
-button.site {
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
-    color: white;
-}
+
 #projects {
     background-image: linear-gradient(to right, #434343 0%, black 100%);
-}
-#skills {
-    min-height: 100vh;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
-}
-#contact { 
-     background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
-}
-.fab {    
-    font-size: 25px;
-    width: 50px;    
-}
-.web {
-      width:25px;
 }
 .projects-heading {
     margin-top: 30px;
     margin-bottom: 60px;
-}
-.social {    
-    display: inline-block;
-    transition: transform 0.3s ease-out;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  
-}
-.social:hover {    
-    transform: translateY(8px);
-
 }
 div.card {
     opacity: 0.3;
@@ -121,27 +97,11 @@ div.card-footer {
 div.card:hover {
     transform: translateY(8px);
 }
-.demo:hover {
-    transform: translateY(20px);
+button.site {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color: white;
 }
-
-/*paralax*/
-
-.parallax {
-    /* The image used */
-    background-image: url("../images/nayan-paralax1.jpg");
-
-    /* Set a specific height */
-    min-height: 100vh; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax3 {
+.parallax2 {
     /* The image used */
     background-image: url("../images/nayan-paralax2.jpeg");
   
@@ -154,68 +114,11 @@ div.card:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.parallax2 {
-    /* The image used */
-    background-image: url("../images/nayan4.jpg");
-  
-    /* Set a specific height */
-    min-height: 50vw; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#skills {
+    min-height: 100vh;
+   
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
-
-@media only screen and (max-width: 500px) {
-    #about {
-        height: 100vh;
-        background-image: url("../images/nayan1compressed1.jpg");
-        background-size: cover;
-        background-position: center;    
-        background-repeat: no-repeat;     
-     }
-     .parallax {
-        /* The image used */
-        background-image: url("../images/nayan1compressed1.jpg");
-
-        /* Set a specific height */
-        min-height: 100vh; 
-        
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-     }
-
-}
-@media only screen and (max-width: 750px) {
-    h2 {
-        font-size:4vw;
-        font-weight: bold;        
-    } 
-    .parallax2 {
-        min-height:80vh;
-    }
-     
-}
-
-
-@media only screen and (max-width: 400px) {
-  .parallax1 {
-    min-height:100vh;
-  }
-  .parallax2 {
-    min-height:100vh;
-  }
-  .parallax3 {
-    min-height:100vh;
-  }
-}
-
 /* timeline*/
 
 .timeline {
@@ -246,7 +149,7 @@ div.card:hover {
 }
   
   /* Container around content */
-.container1 {
+.skill-container {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
@@ -254,7 +157,7 @@ div.card:hover {
 }
   
   /* The circles on the timeline */
-.container1::after {
+.skill-container::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -313,9 +216,8 @@ div.card:hover {
     left: -13px;
 }
 
-  
 /* The actual content */
-.content1 {
+.skill {
     opacity: 0.3;
     padding: 20px 30px;
     background-color: white;
@@ -328,10 +230,36 @@ div.card:hover {
     color:white;
     transition: opacity 1.5s;
 }
-.content1:hover {
+.skill:hover {
     opacity: 1;
 }
+#contact { 
+     background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+}
+
+.web {
+      width:25px;
+}
+.social {    
+    display: inline-block;
+    transition: transform 0.3s ease-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
   
+}
+.social:hover {    
+    transform: translateY(8px);
+
+}
+.icon {
+    display: inline-block;
+}
+.fab,.fas {    
+    font-size: 25px;
+    width: 30px;    
+    text-align:center;
+}
+ 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
 
@@ -341,14 +269,14 @@ div.card:hover {
     }
     
     /* Full-width containers */
-    .container1 {
+    .skill-container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
     }
     
     /* Make sure that all arrows are pointing leftwards */
-    .container1::before {
+    .skill-container::before {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
@@ -367,62 +295,10 @@ div.card:hover {
     .left {
         left: 0;
         }
-    }
+}
 
-.icon {
-    display: inline-block;
-}
- /*overlay effect*/
 
-.overlay {
-      height: 0%;
-      width: 100%;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: rgb(0,0,0);
-      background-color: rgba(0,0,0, 0.9);
-      overflow-y: hidden;
-      transition: 0.5s;
-}
-    
-.overlay-content {
-      position: relative;
-      top: 25%;
-      width: 100%;
-      text-align: center;
-      margin-top: 30px;
-}
-    
-.overlay a {
-      padding: 8px;
-      text-decoration: none;
-      font-size: 36px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-}
-    
-.overlay a:hover, .overlay a:focus {
-      color: #f1f1f1;
-}
-    
-.overlay .closebtn {
-      position: absolute;
-      top: 20px;
-      right: 45px;
-      font-size: 60px;
-}
-    
-@media screen and (max-height: 450px) {
-      .overlay {overflow-y: auto;}
-      .overlay a {font-size: 20px}
-      .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-      }
-}
+
+
 
 
