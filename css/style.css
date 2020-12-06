@@ -106,7 +106,7 @@ button.site {
     background-image: url("../images/nayan-paralax2.jpeg");
   
     /* Set a specific height */
-    /* min-height: 100vh;  */
+    height: 100vh; 
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
