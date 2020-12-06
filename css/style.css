@@ -9,6 +9,7 @@ html,body{
 
 }
 #desc-intro{
+
   color:white;
     font-weight: bold;
     font-size: 70px;
@@ -25,10 +26,8 @@ html,body{
     opacity: 0.7;
     border-radius: 50%;
 }
-#navbar{
-    
-   
-}
+
+
 a{
     display: inline-block;
     color:initial;
@@ -59,6 +58,17 @@ opacity:1;
 
 
 }
+
+
+h2{
+    font-size:2vw;
+    font-weight: bold;
+    
+}
+
+p{
+    font-size:1vw;
+}
 /*.about-center{
     
 font-size: 70px;
@@ -73,6 +83,11 @@ button.site{
 #projects{
     background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
+
+#skills{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
 #contact{
      background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
    
@@ -151,3 +166,330 @@ div.card:hover{
     }
     
   }
+  */
+
+  
+  
+  
+
+/*paralax*/
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/nayan1compressed1.jpg");
+  
+    /* Set a specific height */
+    min-height: 100vh; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax3 {
+    /* The image used */
+    background-image: url("../images/nayan7.jpg");
+  
+    /* Set a specific height */
+    min-height: 100vh; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax2 {
+    /* The image used */
+    background-image: url("../images/nayan4.jpg");
+  
+    /* Set a specific height */
+    min-height: 50vw; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+
+
+
+  @media only screen and (max-width: 500px) {
+  
+    #about{
+     height: 100vh;
+     background-image: url("../images/nayan1compressed1.jpg");
+     background-size: cover;
+    background-position: center;
+     
+     
+     
+     
+     
+     background-repeat: no-repeat;
+     
+     }
+ 
+     .parallax{
+         /* The image used */
+         background-image: url("../images/nayan1compressed1.jpg");
+       
+         /* Set a specific height */
+         min-height: 100vh; 
+       
+         /* Create the parallax scrolling effect */
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+       }
+
+    }
+    @media only screen and (max-width: 750px) {
+
+       h2{
+        font-size:4vw;
+        font-weight: bold;
+        
+    }
+    
+  
+    .parallax2{
+        min-height:80vh;
+    }
+     
+   }
+
+
+   @media only screen and (max-width: 400px) {
+
+  .parallax1{
+    min-height:100vh;
+  }
+  .parallax2{
+    min-height:100vh;
+  }
+  .parallax3{
+    min-height:100vh;
+  }
+
+
+  
+}
+
+
+/* timeline*/
+
+.timeline{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    
+  }
+
+  /* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: auto;
+    margin: 0 auto;
+   
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 12%;
+    bottom: -2%;
+    left: 50%;
+    margin-left: -3px;
+    background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+  }
+  
+  /* Container around content */
+  .container1 {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container1::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color:  #232324;
+    border: 4px solid lightblue;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #232324;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid blue;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #232324 transparent transparent;
+   
+    
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -13px;
+  }
+  
+  /* The actual content */
+  .content1 {
+    opacity: 0.3;
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    transition: transform 0.3s ease-out;
+    border-radius: 17px 17px 17px 17px;
+    border: 0 solid #000000;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-color: #232324;
+    color:white;
+    transition: opacity 1.5s;
+  }
+  .content1:hover{
+    opacity: 1;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .container1 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .container1::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0;
+    }
+    .left {
+        left: 0;
+        }
+    }
+    .icon{
+      display: inline-block;
+    }
+
+
+
+    /*overlay effect*/
+
+    .overlay {
+      height: 0%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.9);
+      overflow-y: hidden;
+      transition: 0.5s;
+    }
+    
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+    }
+    
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .overlay {overflow-y: auto;}
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+      }
+    }
+
+
