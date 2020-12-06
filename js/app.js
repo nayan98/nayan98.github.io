@@ -21,7 +21,7 @@ typeWriter1();
 
 
 
-var text='Programmer | Web Developer | Traveler | Pizza Lover'; 
+var text='SDE @ JP Morgan & Chase | Programmer | Web Developer | Traveler '; 
 var j=0;
 
 
@@ -33,10 +33,7 @@ function typeWriter1() {
       j++;
       setTimeout(typeWriter1, speed1);
     }
-    else{
-        var temp='<img src="images/pizza.png" width="70px" height="70px">'
-        document.getElementById("desc").innerHTML += temp;   
-    }
+   
 
 }
 
