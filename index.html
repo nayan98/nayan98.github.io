@@ -1,219 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./favicon.ico" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script src="https://kit.fontawesome.com/aaa0c9988b.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/style.css">
-<!--link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">-->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/aaa0c9988b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Nayan singhai</title>
+  </head>
+  <body>
 
- 
-<title>Nayan singhai</title>
-</head>
-<body>
+    <nav class="navbar fixed-top navbar-expand-lg" 
+        id ="navbar">
 
+      <button class="navbar-toggler" 
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
 
-  
-    <nav class="navbar fixed-top navbar-expand-lg " id ="navbar">
-        <a class="navbar-brand" href="#"><img src="images/logo4.png" widt="60px" height ="60px"alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link white" id="h"href="#intro">About </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link white" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link white" href="#skills">Skills</a>
-            </li>
-             <li class="nav-item">
-              <a class="nav-link white"  target="_blank" href="resume.pdf">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link white"  href="#contact">Contact</a>
-            </li>
-            
-          </ul>
-        </div>
-      </nav>
-      
+        <span class="navbar-toggler-icon">
+        </span>
 
-     <!-- <div id="about" class="container-fluid d-flex flex-column justify-content-center align-items-center text-light text-center">      -->
-        
-      
-      <div id="intro"></div>
-      
-     <div class="parallax container-fluid d-flex flex-column justify-content-center align-items-center text-light text-center">
-       <h1 id="desc-intro"></h1>
-      <p id="desc"></p>
+      </button>
+
+      <a class="navbar-brand"
+        href="#">
+
+        <img src="images/logo.png" 
+            width="60px"
+            height ="60px"
+            alt="">
+
+      </a>
+
+      <div class="collapse navbar-collapse"
+          id="navbarNav">
+
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item active">
+            <a class="nav-link white"
+              id="h"
+              href="#intro">
+              About 
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link white" 
+              href="#projects">
+              Projects
+            </a>
+          </li>
+              
+          <li class="nav-item">
+            <a class="nav-link white"
+              href="#skills">
+              Skills
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link white" 
+              target="_blank"
+              href="resume.pdf">
+              Resume
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link white" 
+              href="#contact">
+              Contact
+            </a>
+          </li>
+              
+        </ul>
+      </div>
+    </nav>
+
+    <div id="intro">
     </div>
-        
-      
-    
-    <!--
-      <h1 id="desc-intro"></h1>
-           <p id="desc"></p>
 
-    -->
-         
-         
-        
-        <div id="projects" class="p-3">
-            <h1 class="text-center text-light projects-heading">Projects</h1>
-            <div class="container">  
-                <div class="d-flex flex-wrap justify-content-around">
-                <div class="card" >
-                  <hr>
-                  <div class="card-body">
-                    <h5 class="card-title">Auto resume generator</h5>
-                    <p class="card-text">
-                      <ul>
-                        <li>A user friendly tool to generate resume from given templates.</li>
-                        <li>Live Preview and editing can be done very easily.</li>
-                        <li>Technologies used - Node.js , Express.js , passport.js , HTML , Css (Bootstrap 4) , Javascript (Vanilla) , MongoDB</li>
-                      </ul></p>
-                </div>
-                    <div class="card-footer">
-                        <button onclick='call("https\:\/\/nayan98.github.io/Auto-resume-generator/index.html")' class="btn btn-secondary site">Site</button>
-                        <a href="https://github.com/nayan98/Auto-resume-generator" target="_blank"><i class="fab fa-github"></i>Github</a>
-                      
-                  </div>
-                </div>
-              
-                <div class="card">
-                  <hr>
-                  <div class="card-body">
-                    <h5 class="card-title">College-portal</h5>
-                    <p class="card-text"><ul>
-                      <li>An online portal for college students having record of their previous and current semester, syllabus etc.</li>
-                      <li>Google Charts were used to graphically represent past analy- sis of students.</li>
-                      
-                    </ul></p>
-                    
-                  </div>
-                  <div class="card-footer">
-                    
-                    <a href="https://github.com/nayan98/College-portal" target="_blank"><i class="fab fa-github"></i>Github</a>
-                 
-              </div>
-                </div>
-                <div class="card">
-                  <hr>
-                  <div class="card-body">
-                    <h5 class="card-title">Web scrapper</h5>
-                    <p class="card-text"><ul>
-                      <li>Scrapped the Codechef website for extracting number of problems solved by a programmer.</li>
-                      
-                      <li>Tools used - requests module in Python</li>
-                      
-                    </ul></p>
-                </div>
-                    <div class="card-footer">
-                        <button onclick="call('https\:\/\/nayan98.github.io/BinaryCalculator/index.html')" class="btn btn-secondary site">Site</button>
-                        <a href="https://github.com/nayan98/BinaryCalculator" target="_blank"><i class="fab fa-github"></i>Github</a>
-                     
-                  </div>
-                </div>
-                
-                
-              
-                
-    
-               
-                </div>
-                </div>
-    
-                </div>
-        
+    <div class="parallax container-fluid d-flex flex-column justify-content-center align-items-center text-light text-center">
+      <h1 id="desc-intro">
+      </h1>
+      <p id="desc">
+      </p>
+    </div> 
 
-<!--Project section end-->
+    <div id="projects" 
+        class="p-3">
+      <h1 class="text-center text-light projects-heading">
+          Projects
+      </h1>
+      <div class="container">  
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="card" >
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">
+                  Auto resume generator
+              </h5>
+              <p class="card-text">
+                <ul>
+                  <li>
+                    A user friendly tool to generate resume from given templates.
+                  </li>
 
-<div class="parallax2"></div>
-
-<!--skills section starts -->
-
-<div id="skills" class="p-3">
+                  <li>
+                    Live Preview and editing can be done very easily.
+                  </li>
                   
-  <div class="timeline">
-    <h1 class="text-center text-light projects-heading">Skills</h1>
-    <div class="container1 left">
-      <div class="content1">
-        
-        <h2>Programming Languages</h2>
-         
-        <span class="icon"><img src="images/c-language.png" width="30px" height="30px" alt=""> C , </span>
-        <span class="icon"><img src="images/c++-language.png" width="30px" height="30px" alt=""> C++ , </span>
-        <span class="icon"><i class="fab web fa-python"></i> Python </span>
-   
-        
-      
-      </div>
-    </div>
-    <div class="container1 right">
-      <div class="content1">
+                  <li>
+                    Technologies used - Node.js , Express.js , passport.js , HTML , Css (Bootstrap 4) , Javascript (Vanilla) , MongoDB
+                  </li>
+                </ul>
+              </p>
+            </div>
 
-        <h2>Core</h2>                        
-          <span class="icon">Data Structures , </span>
-          <span class="icon">Analysis and Design of Algorithms , </span>
-          <span class="icon">OOPs (Object Oriented Programming) </span>
-      </div>
-    </div>
-    <div class="container1 left">
-      <div class="content1">
-       
-        <h2>Web Development</h2>
-        
-         <span class="icon"><i class="fab web fa-html5"></i>HTML , </span>
-         <span class="icon"><i class="fab web fa-css3-alt"></i>CSS , </span> 
-         <span class="icon"><i class="fab web fa-js-square"></i>JS, </span>
-         <span class="icon"><i class="fab web fa-react"></i> React ,</span>
-         <span class="icon"><i class="fab web fa-node-js"></i>Node js , </span>
-         <span class="icon"> Express js , </span>
-         <span class="icon"><i class="fas web fa-database"></i>MongoDB</span> 
-             
-        
-      </div>
-    </div>
-    
-    </div>
-  
+            <div class="card-footer">
+              <button onclick='call("https\:\/\/nayan98.github.io/Auto-resume-generator/index.html")'
+                      class="btn btn-secondary site">
+                      Site
+              </button>
+              <a href="https://github.com/nayan98/Auto-resume-generator" 
+                target="_blank">
+                <i class="fab fa-github">
+                </i>
+                Github
+              </a>
+            </div>
+          </div>
 
-</div>
+          <div class="card">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">
+                College-portal
+              </h5>
+              <p class="card-text">
+                <ul>
+                  <li>
+                    An online portal for college students having record of their previous and current semester, syllabus etc.
+                  </li>
+                  <li>
+                    Google Charts were used to graphically represent past analy- sis of students.
+                  </li>
+                </ul>
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/nayan98/College-portal" 
+                target="_blank">
+                <i class="fab fa-github">
+                </i>
+                  Github
+              </a>
+            </div>
+          </div>
 
-<!--Skills section end-->
+          <div class="card">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">
+                Web scrapper
+              </h5>
+              <p class="card-text">
+                <ul>
+                  <li>
+                    Scrapped the Codechef website for extracting number of problems solved by a programmer.
+                  </li>
 
-     <div class="parallax3"></div>
-
-
-<!--contacts section starts-->
-        
-        <div id="contact" class="d-flex flex-column justify-content-center align-items-center text-center">
-            <h1 class="mt-5">Let's Work together</h1>
-            
-            <div class="social-media">
-               <a href="https://www.facebook.com/nayan.singhai.3" target="_blank" class="social"><i class="fab fa-facebook-square"></i>Facebook</a>
-                <a href="https://github.com/nayan98" target="_blank" class="social"><i class="fab fa-github"></i>Github</a>
-                <a href="https://www.linkedin.com/in/nayan-singhai-04677913b/" target="_blank" class="social"><i class="fab fa-linkedin"></i>Linkedin</a>
-                <a href="https://www.instagram.com/nayan_singhai_2527/" target="_blank" class="social"><i class="fab fa-instagram-square"></i>Instagram</a>
+                  <li>
+                    Tools used - requests module in Python
+                  </li>
+                </ul>
+              </p>
             </div>
             
-            
+            <div class="card-footer">
+              <button onclick="call('https\:\/\/nayan98.github.io/BinaryCalculator/index.html')" 
+                      class="btn btn-secondary site">
+                      Site
+              </button>
+              <a href="https://github.com/nayan98/BinaryCalculator" 
+                target="_blank">
+                <i class="fab fa-github">
+                </i>
+                Github
+              </a>
+            </div>
+          </div>
         </div>
-        <script src="js/app.js"></script>
-        
-        
-        
-    
+      </div>
+    </div>        
 
-</body>
+    <!--Project section end-->
+
+    <div class="parallax3">
+    </div>
+
+    <!--skills section starts -->
+
+    <div id="skills" class="p-3">
+      <div class="timeline">
+        <h1 class="text-center text-light projects-heading">
+          Skills
+        </h1>
+        <div class="container1 left">
+          <div class="content1">
+            <h2>
+              Programming Languages
+            </h2>
+
+            <span class="icon">
+              <img src="images/c-language.png"
+                  width="30px" 
+                  height="30px" 
+                  alt=""> 
+              C , 
+            </span>
+
+            <span class="icon">
+              <img src="images/c++-language.png" 
+                  width="30px" 
+                  height="30px" 
+                  alt=""> 
+                C++ , 
+            </span>
+          
+            <span class="icon">
+              <i class="fab web fa-python">
+              </i> 
+              Python 
+            </span>
+          </div>
+        </div>
+
+        <div class="container1 right">
+          <div class="content1">
+            <h2>
+              Core
+            </h2> 
+            <span class="icon">
+              Data Structures , 
+            </span>
+
+            <span class="icon">
+              nalysis and Design of Algorithms , 
+            </span>
+              <span class="icon">
+                OOPs (Object Oriented Programming) 
+            </span>
+          </div>
+        </div>
+
+        <div class="container1 left">
+          <div class="content1">
+            <h2>
+              Web Development
+            </h2>
+                
+            <span class="icon">
+              <i class="fab web fa-html5">
+              </i>
+              HTML , 
+            </span>
+            
+            <span class="icon">
+              <i class="fab web fa-css3-alt">
+              </i>
+                CSS ,
+            </span>
+            
+            <span class="icon">
+              <i class="fab web fa-js-square">            
+              </i>
+              JS, 
+            </span>
+
+            <span class="icon">
+              <i class="fab web fa-react">
+              </i> 
+              React ,
+            </span>
+
+            <span class="icon">
+              <i class="fab web fa-node-js">             
+              </i>Node js , 
+            </span>
+
+            <span class="icon"> 
+              Express js , 
+            </span>
+
+            <span class="icon">
+            <i class="fas web fa-database">
+            </i>
+              MongoDB
+            </span> 
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Skills section end-->
+    
+    <!--contacts section starts-->
+    
+    <div id="contact"
+        class="d-flex flex-column justify-content-center align-items-center text-center">
+      <h1 class="mt-5">
+        Let's Work together
+      </h1>
+      <div class="social-media">
+        <a href="https://www.facebook.com/nayan.singhai.3" 
+          target="_blank" 
+          class="social">
+          <i class="fab fa-facebook-square">
+          </i>
+          Facebook
+        </a>
+
+        <a href="https://github.com/nayan98" 
+          target="_blank" 
+          class="social">
+          <i class="fab fa-github">           
+          </i>
+          Github
+        </a>
+
+        <a href="https://www.linkedin.com/in/nayan-singhai-04677913b/" 
+          target="_blank" 
+          class="social">
+          <i class="fab fa-linkedin">          
+          </i>
+          Linkedin
+        </a>
+        
+        <a href="https://www.instagram.com/nayan_singhai_2527/" 
+          target="_blank" 
+          class="social">
+          <i class="fab fa-instagram-square">
+          </i>
+          Instagram
+        </a>
+      </div>
+    </div>
+       
+    <script src="js/app.js">
+    </script>
+  </body>
 </html>
