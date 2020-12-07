@@ -44,9 +44,9 @@ a.white:hover {
 
 /*paralax*/
 
-.parallax1 {
+.parallax {
     /* The image used */
-    background-image: url("../images/nayan-paralax1.jpg");
+    
 
     /* Set a specific height */
     min-height: 100vh; 
@@ -57,11 +57,44 @@ a.white:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.display1{
+    background-image: url("../images/nayan-paralax1.jpg");
+}
+#experience{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    min-height: 100vh;
+}
+.company
+{
+    opacity: 0.3;
+    max-width: 600px; 
+    padding: 20px;
+    
+    transition: transform 0.3s ease-out;
+    border-radius: 17px 17px 17px 17px;
+    border: 0 solid #000000;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-color: #232324;
+    color:white;
+    transition: opacity 1.5s;
+}
+.company:hover{
+    opacity: 1;
+}
+.company-name{
+    margin-bottom: 15px;
+    font-family: serif;
+}
+.display2 {
+    /* The image used */
+    background-image: url("../images/nayan-paralax2.jpeg");
+  
+}
 
 #projects {
     background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
-.projects-heading {
+.heading {
     margin-top: 30px;
     margin-bottom: 60px;
 }
@@ -101,18 +134,11 @@ button.site {
     background-image: linear-gradient(to right, #434343 0%, black 100%);
     color: white;
 }
-.parallax2 {
+.display3 {
     /* The image used */
-    background-image: url("../images/nayan-paralax2.jpeg");
+    background-image: url("../images/nayan-paralax3.jpeg");
   
-    /* Set a specific height */
-    height: 100vh; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-     background-size: cover; 
+   
 }
 #skills {
     min-height: 100vh;
@@ -254,7 +280,7 @@ button.site {
 .icon {
     display: inline-block;
 }
-.fab,.fas {    
+.fab,.fas ,.fa{    
     font-size: 25px;
     width: 30px;    
     text-align:center;
@@ -280,12 +306,12 @@ button.site {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent #353535 transparent transparent;
     }
   
     /* Make sure all circles are at the same spot */
     .left::after, .right::after {
-    left: 15px;
+    left: 18px;
     }
     
     /* Make all right containers behave like the left ones */

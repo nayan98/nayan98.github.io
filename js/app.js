@@ -21,7 +21,7 @@ typeWriter1();
 
 
 
-var text='SDE @ JP Morgan & Chase | Programmer | Web Developer | Traveler '; 
+var text='SDE @ J.P. Morgan & Chase | Programmer | Web Developer | Traveler '; 
 var j=0;
 
 
