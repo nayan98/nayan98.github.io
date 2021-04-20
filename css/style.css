@@ -85,18 +85,19 @@ a.white:hover {
     margin-bottom: 15px;
     font-family: serif;
 }
-.display2 {
-    /* The image used */
-    background-image: url("../images/nayan-paralax2.jpg");
-  
-}
 
 #projects {
     background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
-.heading {
-    margin-top: 30px;
+.heading-container {
+    margin-top: 5rem;
     margin-bottom: 60px;
+}
+.heading {
+    
+    font-size: 3rem;
+    font-weight: bolder;
+    border-bottom: 2px dashed;
 }
 div.card {
     opacity: 0.3;
@@ -134,12 +135,7 @@ button.site {
     background-image: linear-gradient(to right, #434343 0%, black 100%);
     color: white;
 }
-.display3 {
-    /* The image used */
-    background-image: url("../images/nayan-paralax3.jpeg");
-  
-   
-}
+
 #skills {
     min-height: 100vh;
    

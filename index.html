@@ -14,7 +14,7 @@
     <title>Nayan singhai</title>
   </head>
   <body>
-
+    <!-- NavBar starts -->
     <nav class="navbar fixed-top navbar-expand-lg" 
         id ="navbar">
 
@@ -93,104 +93,112 @@
         </ul>
       </div>
     </nav>
-
-    <div id="intro">
-    </div>
-
+    <!-- NavBar ends -->
+    
+    <!-- Front intro starts dynamically loaded by JS -->
     <div class="parallax display1 container-fluid d-flex flex-column justify-content-center align-items-center text-light text-center">
       <h1 id="desc-intro">
       </h1>
       <p id="desc">
       </p>
-    </div> 
+    </div>
+    
+    <!-- Front intro ends -->     
 
-    <div id="experience" class="p-3 d-flex flex-column justify-content-center align-items-center text-light">
-      <h1 class="text-center text-light heading">
-        Experience
-      </h1>
-
-      <div class="company mb-5">
-        <h4 class="company-designation">
-          SDE        
-        </h4>
-        <h3 class="company-name" >
-          J.P. Morgan & Chase
-        </h3>
-        <div class="location-time d-flex justify-content-between mb-3">
-          <div>
-            <i class="fa fa-calendar" >              
-            </i>
-            Sep 2020 - present
-          </div>
-          <div>
-            <i class="fas fa-map-marker-alt">              
-            </i>
-            Bengaluru,India
-          </div>   
-        </div>
-        <div>
-          <ul>
-            <li>
-              Working in Credit Journey Team , creating in house portal for the chase customers having a credit card.
-            </li>
-            <li>
-              A chase customer having a credit card can access it’s credit score , credit report , Identity Monitoring , Goal Setting using credit journey portal.
-            </li>            
-            <li>
-              Working on Blue SDK (JP Morgan In house Platform) , JEST , MDS (Web components) .
-            </li>  
-            <li>
-              Created an Algorithmic Trading Bot during 1 month training.
-            </li>          
-          </ul>
-        </div>
-          
-      </div>  
-      <div class="company">
-        <h4 class="company-designation">
-          SDE INTERN
-        </h4>
-        <h3 class="company-name">
-          J.P. Morgan & Chase
-        </h3>
-        <div class="location-time d-flex justify-content-between mb-3">
-          <div>
-            <i class="fa fa-calendar" aria-hidden ="true">              
-            </i>
-            May 2019 - July 2019
-          </div>
-          <div>
-            <i class="fas fa-map-marker-alt">              
-            </i>
-            Mumbai,India
-          </div>   
-        </div>
-        <div>
-          <ul>
-            <li>
-              Created CHATBOT For CARDS (corporate and regulatory data services) Team.
-            </li>
-            <li>
-              Used an open source library RASA (RASA NLU + RASA CORE ) in python.
-            </li>
-            <li>
-              Deployed the Chatbot on Gaia (Cloud Platform of JP Morgan).
-            </li>
-          </ul>
-        </div>
-          
-      </div> 
+    <!-- Experience Section Starts -->
+    <div id="experience" class="p-3">
+      <div class="heading-container text-center">
+        <span class="text-light heading">
+          Experience
+        </span>
+      </div>
       
-    </div>
-    <div class="parallax display2">
-
-    </div>
-
+      <div class="container d-flex flex-column justify-content-center align-items-center text-light">
+        <div class="company mb-5">
+          <h4 class="company-designation">
+            SDE        
+          </h4>
+          <h3 class="company-name" >
+            J.P. Morgan & Chase
+          </h3>
+          <div class="location-time d-flex justify-content-between mb-3">
+            <div>
+              <i class="fa fa-calendar" >              
+              </i>
+              Sep 2020 - present
+            </div>
+            <div>
+              <i class="fas fa-map-marker-alt">              
+              </i>
+              Bengaluru,India
+            </div>   
+          </div>
+          <div>
+            <ul>
+              <li>
+                Working in Credit Journey Team , creating in house portal for the chase customers having a credit card.
+              </li>
+              <li>
+                A chase customer having a credit card can access it’s credit score , credit report , Identity Monitoring , Goal Setting using credit journey portal.
+              </li>            
+              <li>
+                Working on Blue SDK (JP Morgan In house Platform) , JEST , MDS (Web components) .
+              </li>  
+              <li>
+                Created an Algorithmic Trading Bot during 1 month training.
+              </li>          
+            </ul>
+          </div>
+            
+        </div>  
+        <div class="company">
+          <h4 class="company-designation">
+            SDE INTERN
+          </h4>
+          <h3 class="company-name">
+            J.P. Morgan & Chase
+          </h3>
+          <div class="location-time d-flex justify-content-between mb-3">
+            <div>
+              <i class="fa fa-calendar" aria-hidden ="true">              
+              </i>
+              May 2019 - July 2019
+            </div>
+            <div>
+              <i class="fas fa-map-marker-alt">              
+              </i>
+              Mumbai,India
+            </div>   
+          </div>
+          <div>
+            <ul>
+              <li>
+                Created CHATBOT For CARDS (corporate and regulatory data services) Team.
+              </li>
+              <li>
+                Used an open source library RASA (RASA NLU + RASA CORE ) in python.
+              </li>
+              <li>
+                Deployed the Chatbot on Gaia (Cloud Platform of JP Morgan).
+              </li>
+            </ul>
+          </div>
+            
+        </div> 
+      </div>
+    
+      
+    </div>   
+    <!-- Experience Section ends -->
+    <div class="section-break"></div>
+    <!-- Project Section starts -->
     <div id="projects" 
          class="p-3">
-      <h1 class="text-center text-light heading">
-          Projects
-      </h1>
+         <div class="heading-container text-center">
+          <span class="text-light heading">
+            Projects
+          </span>
+        </div>
       <div class="container">  
         <div class="d-flex flex-wrap justify-content-around">
           <div class="card" >
@@ -291,20 +299,19 @@
           </div>
         </div>
       </div>
-    </div>        
-
-    <!--Project section end-->
-
-    <div class="parallax display3">
-    </div>
-
+    </div>  
+    
+    <!--Project section ends-->    
+    <div class="section-break"></div>
     <!--skills section starts -->
 
     <div id="skills" class="p-3">
       <div class="timeline">
-        <h1 class="text-center text-light heading">
-          Skills
-        </h1>
+        <div class="heading-container text-center">
+          <span class="text-light heading">
+            Skills
+          </span>
+        </div>
         <div class="skill-container left">
           <div class="skill">
             <h2>
@@ -442,6 +449,7 @@
         </a>
       </div>
     </div>
+    <!-- Contact Section ends -->
        
     <script src="js/app.js">
     </script>
